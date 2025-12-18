@@ -1,1 +1,15 @@
+= Bridge: Nginx-Zig
+:bridge_tech: Zig 0.11+
+:target: Nginx C-Binary
 
+== Purpose
+This bridge uses **Zig** to create a high-integrity interface between Ephapax linear tokens and Nginx C-buffers. It eliminates "Configuration Drift" by treating Nginx configs as linear matter.
+
+== Secure Handover
+The Zig layer validates the configuration buffer provided by the Ephapax supervisor before passing the pointer to the Nginx internal cycle.
+
+== Install
+[source,bash]
+----
+just install-bridge
+----
