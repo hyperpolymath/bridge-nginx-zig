@@ -1,34 +1,22 @@
 ;; SPDX-License-Identifier: PMPL-1.0
-;; STATE.scm - Current project state
+;; STATE.scm - Project state for bridge-nginx-zig
 
-(define project-state
-  `((metadata
-      ((version . "1.0.0")
-       (schema-version . "1")
-       (created . "2026-01-10T13:47:57+00:00")
-       (updated . "2026-01-10T13:47:57+00:00")
-       (project . "bridge-nginx-zig")
-       (repo . "bridge-nginx-zig")))
+(state
+  (metadata
+    (version "0.1.0")
+    (schema-version "1.0")
+    (created "2024-06-01")
+    (updated "2025-01-17")
+    (project "bridge-nginx-zig")
+    (repo "hyperpolymath/bridge-nginx-zig"))
 
-    (current-position
-      ((phase . "Active Development")
-       (overall-completion . 50)
-       (working-features . ())))
+  (project-context
+    (name "Bridge Nginx Zig")
+    (tagline "Type-safe Zig bridge for Nginx with Ephapax linear tokens")
+    (tech-stack ("zig" "nginx" "ephapax")))
 
-    (route-to-mvp
-      ((milestones
-        ((v1.0 . ((items . ("Initial setup" "Core functionality"))
-                  (status . "in-progress")))))))
-
-    (blockers-and-issues
-      ((critical . ())
-       (high . ())
-       (medium . ())
-       (low . ())))
-
-    (critical-next-actions
-      ((immediate . ())
-       (this-week . ())
-       (this-month . ())))
-
-    (session-history . ())))
+  (current-position
+    (phase "specification")
+    (overall-completion 5)
+    (working-features
+      ("Architecture documentation"))))
